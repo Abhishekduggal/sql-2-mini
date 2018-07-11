@@ -10,3 +10,19 @@ Answers for the Mini
 /*   INSERT INTO Movie(Title, media_type_Id) VALUES ('HarryPotter', 2); */ 
 
 /* SELECT * FROM movie; */
+
+/* ALTER TABLE movie ADD COLUMN Genreid INTEGER REFERENCES Genre(GenreId); */
+
+/* SELECT * FROM movie; */
+
+/* UPDATE movie SET GenreId = 22 where id = 1; */
+
+/* SELECT * FROM movie; */
+
+/* SELECT * FROM Artist 
+JOIN Album ON Album.title = Artist.name;
+ */
+
+/* SELECT Album.title, Artist.name 
+FROM Artist 
+JOIN Album ON Album.ArtistId = Artist.ArtistId */
