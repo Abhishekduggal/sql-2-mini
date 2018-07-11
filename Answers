@@ -26,3 +26,37 @@ JOIN Album ON Album.title = Artist.name;
 /* SELECT Album.title, Artist.name 
 FROM Artist 
 JOIN Album ON Album.ArtistId = Artist.ArtistId */
+
+
+
+/* SELECT Album.title, Artist.name 
+FROM Artist 
+JOIN Album ON Album.ArtistId = Artist.ArtistId */
+
+/* SELECT * FROM TRACK 
+WHERE GenreID IN (SELECT GenreId FROM Genre WHERE Name = 'Jazz' OR Name = 'Blues');
+ */
+ 
+ 
+/*  UPDATE Employee SET Phone = null WHERE EmployeeId = 1; */
+
+/* SELECT * FROM Employee WHERE EmployeeId = 1; */
+
+/* SELECT * FROM Customer WHERE Company IS Null; */
+
+/* SELECT Artist.ArtistId, Artist.Name, count(*)
+FROM Artist 
+JOIN Album ON Artist.ArtistId = Album.ArtistId
+GROUP BY Artist.ArtistId; */
+/* 
+SELECT Artist.ArtistId, Artist.Name, count(*)
+FROM Artist 
+JOIN Album ON Artist.ArtistId = Album.ArtistId
+GROUP BY Artist.ArtistId;
+ORDER BY Artist.Album DESC; */
+
+/* SELECT DISTINCT (Country) FROM Customer; */
+
+/* SELECT * FROM Customer WHERE Fax IS Null; */
+
+/* DELETE FROM Customer WHERE Fax IS Null; */
