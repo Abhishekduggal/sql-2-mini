@@ -1,0 +1,12 @@
+Answers for the Mini
+
+/* CREATE TABLE movie (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title VARCHAR (80),
+  media_type_id REFERENCES MediaType(MediaTypeId)
+  )
+/* /*    */
+   
+/*   INSERT INTO Movie(Title, media_type_Id) VALUES ('HarryPotter', 2); */ 
+
+/* SELECT * FROM movie; */
